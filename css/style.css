@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+main{
+	flex-grow: 1;
+}
+/* ============================ */
+
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+body {
+	font-family: "lato", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #1E212C;
+	line-height: 150%;
+}
+/*_________ BLOCKS ___________*/
+.button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 313%;
+	padding: 0 40px;
+	border: 1px solid #FF3F3A;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+.header-block {
+}
+.header-block__label {
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.header-block__label:not(:last-child) {
+	margin-bottom: 8px;
+}
+.header-block__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+}
+
+/*________ FEATURED-COURSES _________*/
+.featured-courses {
+	padding: 120px 0;
+}
+.featured-courses__container {
+}
+.featured-courses__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.featured-courses__top:not(:last-child) {
+	margin-bottom: 60px;
+}
+.featured-courses__header-block {
+}
+.featured-courses__button {
+}
+.featured-courses__button--border {
+	background-color: #fff;
+	color: #FF3F3A;
+}
+.featured-courses__button--border:hover {
+	background-color: #FF3F3A;
+	color: #fff;
+}
+
+
+
+
+.featured-courses__items {
+	display: flex;
+	margin: 0 -15px;
+	flex-wrap: wrap;
+	row-gap: 30px;
+}
+.featured-courses__item {
+	flex: 0 1 50%;
+	padding: 0 15px;
+}
+.item-courses {
+}
+.item-courses__content {
+	border: 1px solid #E5E8ED;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	display: flex;
+	height: 100%;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	transition: box-shadow 0.3s ease;
+}
+.item-courses__content:hover {
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+.item-courses__image {
+	flex: 0 0 214px;
+	height: 214px;
+	overflow: hidden;
+}
+.item-courses__image img {
+	transition: all 0.5s ease;
+	width: 100%;
+}
+.item-courses__image img:hover {
+	transform: scale(1.05);
+}
+
+.item-courses__body {
+
+}
+.body-courses {
+	padding: 31px 32px;
+	display: inline-flex;
+	align-items: flex-start;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.body-courses__badge {
+	text-align: center;
+	border-radius: 4px;
+	padding: 1px 8px;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+.body-courses__badge--green {
+	background-color: #03CEA4;
+}
+.body-courses__badge--green:hover {
+	background-color: #03ac8a;
+}
+.body-courses__badge--blue {
+	background-color: #5A87FC;
+}
+.body-courses__badge--blue:hover {
+	background-color: #0535af;
+}
+.body-courses__badge--orange {
+	background-color: #F89828;
+}
+.body-courses__badge--orange:hover {
+	background-color: #c26b08;
+}
+.body-courses__badge--pink {
+	background-color: #F52F6E;
+}
+.body-courses__badge--pink:hover {
+	background-color: #b9053e;
+}
+.body-courses__title {
+	flex: 1 0 auto;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.body-courses__link {
+
+}
+.body-courses__link:hover {
+	text-decoration: underline;
+}
+.body-courses__info {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+.body-courses__price {
+	color: #FF4242;
+	font-weight: 700;
+	font-size: 18px;
+}
+.body-courses__speaker {
+	font-weight: 400;
+	font-size: 18px;
+	color: #787A80;
+	display: flex;
+	gap: 8px;
+}
+.body-courses__speaker::before {
+	content: '';
+	width: 1px;
+	height: 16px;
+	flex: 0 0 1px;
+	align-self: center;
+	background-color: #787A80;
+}
+.body-courses__speaker:hover {
+	text-decoration: underline;
+}
